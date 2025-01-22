@@ -7,6 +7,8 @@
 
 :root{
     --main-color: #07af72;
+    --bg-color: rgba(147, 145, 145, 0.252);
+    --text-color: gray;
 }
 
 html, body{
@@ -18,7 +20,17 @@ html, body{
     height: 100%;
     width: 30%;
     margin: 0 35%;
+    background: var(--bg-color);
 }
+
+.main h2{
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 200;
+}
+
+/* ----------------- navbar ------------------ */
 
 .navbar1{
     height: 80px;
@@ -70,7 +82,7 @@ html, body{
 }
 
 #Premium{
-    color: #ffffff52;
+    color: var(--text-color);
 }
 
 .nav-links.selected{
@@ -78,5 +90,152 @@ html, body{
     border-bottom: 3px solid #fff;
 }
 
+/* ----------------- matches ------------------ */
+
+
+.matchesContainer{
+    width: 100%;
+    height: 300px;
+    padding: 0 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.matches{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.match{
+    width: 100%;
+    height: 80%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.match .headline{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+
+.match .headline h2{
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+#circle{
+    content: '';
+    height: 5px;
+    width: 5px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background: var(--text-color);
+}
+
+.scorecard{
+    height: 40%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.result{
+    height: 20%;
+    padding: 5px 10px;
+}
+
+.result h2{
+    font-size: 12px;
+    color: blue;
+}
+
+.bottom{
+    width: 100%;
+    height: 30%;
+    background: gray;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 80px;
+}
+
+.bottom h2{
+    color: #fff;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+/* ----------------- highlights ------------------ */
+
+.highlightsContainer{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlights{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 5px;
+}
+
+.highlight{
+    width: 300px;
+    height: fit-content;
+    background: rgb(255, 255, 255);
+    display: flex; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.highlight i{
+    width: 20%;
+}
+
+.highlight h2{
+    width: fit-content;
+    font-size: 12px;
+    white-space: nowrap;
+}
 
 
