@@ -17,10 +17,11 @@ html, body{
 }
 
 .main{
-    height: 100%;
+    position: relative;
     width: 30%;
     margin: 0 35%;
     background: var(--bg-color);
+    overflow: hidden;
 }
 
 .main h2{
@@ -92,11 +93,11 @@ html, body{
 
 /* ----------------- matches ------------------ */
 
-
 .matchesContainer{
     width: 100%;
     height: 300px;
     padding: 0 20px;
+    padding-right: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -198,6 +199,7 @@ html, body{
     width: 100%;
     height: fit-content;
     padding: 10px 20px;
+    padding-right: 0;
     margin-bottom: 20px;
     overflow: hidden;
     display: flex;
@@ -220,11 +222,11 @@ html, body{
     background: rgb(255, 255, 255);
     display: flex; 
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     padding: 5px 15px;
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     margin-top: 5px;
 }
 
@@ -236,6 +238,172 @@ html, body{
     width: fit-content;
     font-size: 12px;
     white-space: nowrap;
+    text-transform: capitalize;
 }
 
+/* ----------------- featured videos ------------------ */
 
+.featuredContainer{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    padding-right: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.feature{
+    min-width: 180px;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature .caption{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    background: linear-gradient(transparent, #000000);
+}
+
+.feature .caption i{
+    width: 10%;
+    font-size: 14px;
+}
+
+.feature .caption p{
+    width: 90%;
+    font-size: 10px;
+}
+
+/* ----------------- trending  ------------------ */
+
+.trendingContainer{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    padding-right: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.trend{
+    min-width: 180px;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.trend img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trend .caption{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    background: linear-gradient(transparent, #000000);
+}
+
+.trend .caption i{
+    width: 10%;
+    font-size: 14px;
+}
+
+.trend .caption p{
+    width: 90%;
+    font-size: 10px;
+}
+
+/* ----------------- footer menu ------------------ */
+.footer{
+    width: 100%;
+    height: 60px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.footer .elem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer .elem i, .footer .elem h4{
+    opacity: 0.6;
+    text-align: center;
+}
+
+.footer .elem.active i, .footer .elem.active h4{
+    opacity: 1.2;
+}
