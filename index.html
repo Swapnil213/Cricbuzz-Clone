@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cricbuzz</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,256 +30,301 @@
             </div>
         </div>
 
-        <!-- ------------------ Matches ----------------------- -->
-
-        <div class="matchesContainer">
-            <h2>Matches</h2>
-
-            <div class="matches">
-                <div class="match">
-                    <div class="headline">
-                        <h2>10th Match</h2>
-                        <div id="circle"></div>
-                        <h2>Big Bash League 2024-25</h2>
-                    </div>
-                    <div class="scorecard">
-                        <div class="score">
-                            <div class="left">
-                                <!-- <img src="" alt=""> -->
-                                <h2>PRS</h2>
+        <div class="page-content">
+            <!-- ------------------ Matches ----------------------- -->
+            
+            <div class="matchesContainer">
+                <h2 id="container-heading">Matches</h2>
+            
+                <div class="matches">
+                    <div class="match">
+                        <div class="headline">
+                            <h2>10th Match</h2>
+                            <div id="circle"></div>
+                            <h2>Big Bash League 2024-25</h2>
+                        </div>
+                        <div class="scorecard">
+                            <div class="score win">
+                                <div class="left">
+                                    <img src="images/perth-scorchers.webp">
+                                    <h2>PRS</h2>
+                                </div>
+                                <div class="right">
+                                    <h2>143-8(20)</h2>
+                                </div>
                             </div>
-                            <div class="right">
-                                <h2>143-8(20)</h2>
+            
+                            <div class="score">
+                                <div class="left">
+                                    <img src="images/melbourne-renegades.webp">
+                                    <h2>MLR</h2>
+                                </div>
+                                <div class="right">
+                                    <h2>144-8(19)</h2>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="score">
-                            <div class="left">
-                                <!-- <img src="" alt=""> -->
-                                <h2>MLR</h2>
-                            </div>
-                            <div class="right">
-                                <h2>144-8(19)</h2>
-                            </div>
+                        <div class="result">
+                            <h2>Melbourne Renegades won by 2 wkts</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2>fantasy</h2>
+                            <h2>table</h2>
+                            <h2>schedule</h2>
                         </div>
                     </div>
-                    <div class="result">
-                        <h2>Melbourne Renegades won by 2 wkts</h2>
+            
+                    <div class="match">
+                        <div class="headline">
+                            <h2>10th Match</h2>
+                            <div id="circle"></div>
+                            <h2>Big Bash League 2024-25</h2>
+                        </div>
+                        <div class="scorecard">
+                            <div class="score win">
+                                <div class="left">
+                                    <img src="images/perth-scorchers.webp">
+                                    <h2>PRS</h2>
+                                </div>
+                                <div class="right">
+                                    <h2>143-8(20)</h2>
+                                </div>
+                            </div>
+            
+                            <div class="score">
+                                <div class="left">
+                                    <img src="images/melbourne-renegades.webp">
+                                    <h2>MLR</h2>
+                                </div>
+                                <div class="right">
+                                    <h2>144-8(19)</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h2>Melbourne Renegades won by 2 wkts</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2>fantasy</h2>
+                            <h2>table</h2>
+                            <h2>schedule</h2>
+                        </div>
                     </div>
-                    <div class="bottom">
-                        <h2>fantasy</h2>
-                        <h2>table</h2>
-                        <h2>schedule</h2>
+            
+                    <div class="match">
+                        <div class="headline">
+                            <h2>10th Match</h2>
+                            <div id="circle"></div>
+                            <h2>Big Bash League 2024-25</h2>
+                        </div>
+                        <div class="scorecard">
+                            <div class="score win">
+                                <div class="left">
+                                    <img src="images/perth-scorchers.webp">
+                                    <h2>PRS</h2>
+                                </div>
+                                <div class="right">
+                                    <h2>143-8(20)</h2>
+                                </div>
+                            </div>
+            
+                            <div class="score">
+                                <div class="left">
+                                    <img src="images/melbourne-renegades.webp">
+                                    <h2>MLR</h2>
+                                </div>
+                                <div class="right">
+                                    <h2>144-8(19)</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h2>Melbourne Renegades won by 2 wkts</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2>fantasy</h2>
+                            <h2>table</h2>
+                            <h2>schedule</h2>
+                        </div>
                     </div>
                 </div>
-
-                <div class="match">
-                    <div class="headline">
-                        <h2>10th Match</h2>
-                        <div id="circle"></div>
-                        <h2>Big Bash League 2024-25</h2>
+            
+            </div>
+            
+            <!-- ------------------ Highlights ----------------------- -->
+            
+            <div class="highlightsContainer">
+                <div class="highlights">
+                    <div class="highlight">
+                        <i class="fa-solid fa-play"></i>
+                        <h2>Fantasy Handbook</h2>
                     </div>
-                    <div class="scorecard">
-                        <div class="score">
-                            <div class="left">
-                                <!-- <img src="" alt=""> -->
-                                <h2>PRS</h2>
-                            </div>
-                            <div class="right">
-                                <h2>143-8(20)</h2>
-                            </div>
-                        </div>
-
-                        <div class="score">
-                            <div class="left">
-                                <!-- <img src="" alt=""> -->
-                                <h2>MLR</h2>
-                            </div>
-                            <div class="right">
-                                <h2>144-8(19)</h2>
-                            </div>
-                        </div>
+                    <div class="highlight">
+                        <i class="fa-solid fa-medal"></i>
+                        <h2>See Plans</h2>
                     </div>
-                    <div class="result">
-                        <h2>Melbourne Renegades won by 2 wkts</h2>
+                    <div class="highlight">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>Team India</h2>
                     </div>
-                    <div class="bottom">
-                        <h2>fantasy</h2>
-                        <h2>table</h2>
-                        <h2>schedule</h2>
+                    <div class="highlight">
+                        <i class="fa-solid fa-plus"></i>
+                        <h2>Cricbuzz Plus</h2>
+                    </div>
+                    <div class="highlight">
+                        <i class="fa-solid fa-medal"></i>
+                        <h2>CB Plus & Times Prime</h2>
                     </div>
                 </div>
-
-                <div class="match">
-                    <div class="headline">
-                        <h2>10th Match</h2>
-                        <div id="circle"></div>
-                        <h2>Big Bash League 2024-25</h2>
-                    </div>
-                    <div class="scorecard">
-                        <div class="score">
-                            <div class="left">
-                                <!-- <img src="" alt=""> -->
-                                <h2>PRS</h2>
-                            </div>
-                            <div class="right">
-                                <h2>143-8(20)</h2>
-                            </div>
-                        </div>
-
-                        <div class="score">
-                            <div class="left">
-                                <!-- <img src="" alt=""> -->
-                                <h2>MLR</h2>
-                            </div>
-                            <div class="right">
-                                <h2>144-8(19)</h2>
-                            </div>
+            </div>
+            
+            <!-- ------------------ Featured Videos----------------------- -->
+            
+            <div class="featuredContainer">
+                <h2 id="container-heading">Featured Videos</h2>
+                <div class="featured">
+                    <div class="feature">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
                         </div>
                     </div>
-                    <div class="result">
-                        <h2>Melbourne Renegades won by 2 wkts</h2>
+            
+                    <div class="feature">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
+                        </div>
                     </div>
-                    <div class="bottom">
-                        <h2>fantasy</h2>
-                        <h2>table</h2>
-                        <h2>schedule</h2>
+            
+                    <div class="feature">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
+                        </div>
+                    </div>
+            
+                    <div class="feature">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ------------------ Trending----------------------- -->
+            
+            <div class="trendingContainer">
+                <h2 id="container-heading">Trending</h2>
+                <div class="trending">
+                    <div class="trend">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
+                        </div>
+                    </div>
+            
+                    <div class="trend">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
+                        </div>
+                    </div>
+            
+                    <div class="trend">
+                        <img src="images/feature1.webp">
+                        <div class="caption">
+                            <i class="fa-solid fa-play"></i>
+                            <p>chakravarthy will make it tough for england to combat spin:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ------------------ Top Stories ----------------------- -->
+            
+            <div class="storiesContainer">
+                <h2 id="container-heading">Top Stories</h2>
+                <div class="stories">
+                    <div class="story">
+                        <h3 id="st-heading">india vs england, 2nd t20i</h3>
+                        <img src="images/feature1.webp">
+                        <h2 id="caption">Tilak's gear tweaks ushers india through testing trrain
+                        </h2>
+                        <p>In a knock that showcased his T20 smarts. Tilak Varma shone through with his versatilitywith the bat</p>
+                        <div class="extras">
+                            <img id="extras-image" src="images/feature1.webp">
+                            <p id="extras-text">Tilak thwarts England in thriller to put india 2-0 up</p>
+                        </div>
+                        <div class="extras">
+                            <img id="extras-image" src="images/feature1.webp">
+                            <p id="extras-text">Nitish ruled out of England T20Is; Dube, Ramandeep called up</p>
+                        </div>
+                    </div>
+            
+                    <div class="story">
+                        <h3 id="st-heading">india vs england, 2nd t20i</h3>
+                        <img src="images/feature1.webp">
+                        <h2 id="caption">Tilak's gear tweaks ushers india through testing trrain
+                        </h2>
+                        <p>In a knock that showcased his T20 smarts. Tilak Varma shone through with his versatilitywith the bat</p>
+                        <div class="extras">
+                            <img id="extras-image" src="images/feature1.webp">
+                            <p id="extras-text">Tilak thwarts England in thriller to put india 2-0 up</p>
+                        </div>
+                    </div>
+            
+                    <div class="story">
+                        <h3 id="st-heading">india vs england, 2nd t20i</h3>
+                        <img src="images/feature1.webp">
+                        <h2 id="caption">Tilak's gear tweaks ushers india through testing trrain
+                        </h2>
+                        <p>In a knock that showcased his T20 smarts. Tilak Varma shone through with his versatilitywith the bat</p>
+                        <div class="extras">
+                            <img id="extras-image" src="images/feature1.webp">
+                            <p id="extras-text">Tilak thwarts England in thriller to put india 2-0 up</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
-
-        <!-- ------------------ Highlights ----------------------- -->
-
-        <div class="highlightsContainer">
-            <div class="highlights">
-                <div class="highlight">
-                    <i>©</i>
-                    <h2>Fantasy Handbook</h2>
-                </div>
-                <div class="highlight">
-                    <i>©</i>
-                    <h2>See Plans</h2>
-                </div>
-                <div class="highlight">
-                    <i>©</i>
-                    <h2>Team India</h2>
-                </div>
-                <div class="highlight">
-                    <i>©</i>
-                    <h2>Cricbuzz Plus</h2>
-                </div>
-                <div class="highlight">
-                    <i>©</i>
-                    <h2>CB Plus & Times Prime</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- ------------------ Featured Videos----------------------- -->
-
-        <div class="featuredContainer">
-            <h2>Featured Videos</h2>
-            <div class="featured">
-                <div class="feature">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-
-                <div class="feature">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-
-                <div class="feature">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-
-                <div class="feature">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ------------------ Trending----------------------- -->
-
-        <div class="trendingContainer">
-            <h2>Trending</h2>
-            <div class="trending">
-                <div class="trend">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-
-                <div class="trend">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-
-                <div class="trend">
-                    <img src="images/feature1.webp">
-                    <div class="caption">
-                        <i>@</i>
-                        <p>chakravarthy will make it tough for england to combat spin:</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ------------------ Top Stories ----------------------- -->
-
-        <div class="top-stories">
-            <h2>Top Stories</h2>
-        </div>
-
+        
         <!-- ------------------ Footer ----------------------- -->
 
         <div class="footer">
-            <div class="elem active">
-                <i>@</i>
+            <div class="elem active"  data-page="index">
+                <i class="fa-solid fa-house"></i>
                 <h4>Home</h4>
             </div>
-            <div class="elem">
-                <i>@</i>
+            <div class="elem" data-page="matches">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
                 <h4>Matches</h4>
             </div>
-            <div class="elem">
-                <i>@</i>
+            <div class="elem" data-page="videos">
+                <i class="fa-solid fa-video"></i>
                 <h4>Videos</h4>
             </div>
-            <div class="elem">
-                <i>@</i>
+            <div class="elem" data-page="news">
+                <i class="fa-regular fa-newspaper"></i>
                 <h4>News</h4>
             </div>
-            <div class="elem">
-                <i>@</i>
+            <div class="elem" data-page="more">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
                 <h4>More</h4>
             </div>
         </div>
 
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
