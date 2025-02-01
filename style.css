@@ -607,6 +607,7 @@ body {
   justify-content: space-between;
   gap: 10px;
   overflow-x: auto;
+  overflow-y: hidden;
   background: #fff;
 }
 
