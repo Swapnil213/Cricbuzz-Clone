@@ -30,7 +30,7 @@ body {
   .main {
     position: relative;
     width: 30%;
-    min-width: 450px;
+    min-width: 100vw;
     margin: 0;
     background: var(--bg-color);
     overflow: hidden;
@@ -39,8 +39,7 @@ body {
   
 .navbar1 {
   height: 30px;
-  width: 100%;
-  min-width: 450px;
+  min-width: 100vw;
   background: var(--main-color);
   display: flex;
   align-items: center;
@@ -759,4 +758,58 @@ body {
 
 .mcontainer .result.awaited h2 {
   color: red;
+}
+
+/* videos Page */
+
+.videos-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 450px;
+  padding-right: 0;
+  overflow: auto;
+  position: fixed;
+  height: calc(100% - 105px);
+  top: calc(55px);
+}
+
+.videos-content::-webkit-scrollbar {
+  display: none;
+}
+
+.videos-category {
+  padding: 50px 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #fff;
+}
+
+.videos-category::-webkit-scrollbar {
+  display: none;
+}
+
+.videos-category .elem {
+  padding: 0.5vw 1vw;
+  border-radius: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.videos-category .elem img{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.videos-category .elem .text{
+  font-size: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 300;
 }
