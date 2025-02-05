@@ -260,7 +260,7 @@ body {
   color: red;
 }
 
-.bottom {
+.match .bottom {
   width: 100%;
   height: 30%;
   background: rgba(128, 128, 128, 0.425);
@@ -275,7 +275,7 @@ body {
   margin-top: 5px;
 }
 
-.bottom h2 {
+.match .bottom h2 {
   color: #000000;
   opacity: 0.3;
   font-size: 13px;
@@ -857,4 +857,134 @@ body {
 
 .more-content ul li .text {
   font-size: 18px;
+}
+
+/* news.html */
+
+.news-content{
+  width: 30%;
+  min-width: 450px;
+  position: fixed;
+  height: calc(100% - 105px);
+  top: calc(100px);
+  overflow-y: auto;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.news-content::-webkit-scrollbar{
+  display: none;
+}
+
+.news{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+}
+
+.news .top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.news .top #news-image{
+  width: 25%;
+  overflow: hidden;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.news .top #news-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news .top .right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.news .top .right #news-text{
+  font-size: 16px;
+}
+
+.news .top .right #news-time{
+  padding: 2px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.news .bottom{
+  padding: 10px;
+  font-size: 15px;
+  background: #fff;
+  color: #000000;
+  text-align: left;
+  opacity: 0.6;
+}
+
+/* premium.html */
+
+.premium-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 20px;
+  gap: 10px;
+  margin: 5px;
+}
+
+.premium-container::-webkit-scrollbar{
+  display: none;
+}
+
+.premium-container .card{
+  min-width: 90%;
+  height: auto;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; 
+  border-radius: 10px;
+}
+
+.premium-container .card.active{
+  scale: 1.1;
+}
+
+.premium-container .card img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.premium-container .card .text{
+ width: 100%;
+ font-size: 12px;
+ color: #fff;
+ background: var(--main-color);
+ text-align: center;
+ padding: 10px;
 }
