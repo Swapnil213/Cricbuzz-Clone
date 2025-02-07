@@ -10,7 +10,7 @@
   --bg-color: rgba(147, 145, 145, 0.252);
   --text-color: gray;
   --general-width: 450px;
-  --main-margin: 35vw;
+  --main-margin: 50%;
   --size-8: 8px;
   --size-10: 10px;
   --size-12: 12px;
@@ -23,7 +23,7 @@
 
 @media (max-width: 600px) {
   :root{
-    --general-width: 1000px;
+    --general-width: 100%;
     --main-margin: 0;
   }
 }
@@ -36,24 +36,23 @@ body {
 
 .main {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
-  width: 30%;
-  margin-left: var(--main-margin);
-  margin-right: var(--main-margin);
+  width: 30vw;
+  padding-left: var(--main-margin);
+  padding-right: var(--main-margin);
   min-width: var(--general-width);
   background: var(--bg-color);
   overflow: hidden;
-  border: 0.5px solid gray;
 }
-
-
 
 #container-heading {
   font-size: var(--size-15);
   text-transform: uppercase;
   color: #000000;
   font-weight: 200;
+  padding-left: 20px;
 }
 
 /* ----------------- navbar ------------------ */
@@ -66,21 +65,20 @@ body {
 }
 
 .navbar1 {
-  /* height: 60px; */
   width: 30%;
   min-width: var(--general-width);
   background: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 10px;
+  padding: 8px 10px;
   position: fixed;
   top: 0;
   z-index: 90;
 }
 
 .navbar1 img {
-  padding: 5px 10px;
+  padding: 10px 10px;
   width: 100px;
 }
 
@@ -88,7 +86,7 @@ body {
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
-  padding: 5px 10px;
+  padding: 8px 10px;
   border-radius: 10px;
   font-size: var(--size-12);
   font-weight: 200;
@@ -97,7 +95,6 @@ body {
 }
 
 .navbar2 {
-  /* height: 40px; */
   width: 30%;
   min-width: var(--general-width);
   background: var(--main-color);
@@ -106,6 +103,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  padding-top: 10px;
   top: 60px;
   z-index: 99;
 }
@@ -151,6 +149,7 @@ body {
   width: 100%;
   height: 300px;
   padding: 0 20px;
+  padding-left: 0 !important;
   padding-right: 0;
   overflow: hidden;
   display: flex;
@@ -284,9 +283,7 @@ body {
 .highlightsContainer {
   width: 100%;
   height: fit-content;
-  padding: 10px 20px;
-  padding-right: 0;
-  margin-bottom: 20px;
+  padding: 10px 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -294,7 +291,8 @@ body {
 
 .highlights {
   width: 100%;
-  height: 100%;
+  padding-left: 10px;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -316,8 +314,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: 5px;
-  margin-right: 10px;
+  margin: 5px 5px;
 }
 
 .highlight i {
@@ -336,8 +333,7 @@ body {
 .featuredContainer {
   width: 100%;
   height: fit-content;
-  padding: 10px 20px;
-  padding-right: 0;
+  padding: 10px 0;
   margin-bottom: 20px;
   overflow: hidden;
   display: flex;
@@ -351,6 +347,7 @@ body {
   align-items: center;
   justify-content: space-between;
   overflow: auto;
+  padding-left: 10px;
 }
 
 .featured::-webkit-scrollbar {
@@ -360,11 +357,9 @@ body {
 .feature {
   min-width: 180px;
   height: 120px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-top: 10px;
-  margin-right: 10px;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px 10px;
   overflow: hidden;
   position: relative;
 }
@@ -408,8 +403,7 @@ body {
 .trendingContainer {
   width: 100%;
   height: fit-content;
-  padding: 10px 20px;
-  padding-right: 0;
+  padding: 10px 0;
   margin-bottom: 20px;
   overflow: hidden;
   display: flex;
@@ -420,6 +414,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  padding-left: 20px;
   align-items: center;
   justify-content: space-between;
   overflow: auto;
@@ -570,6 +565,8 @@ body {
   position: fixed;
   bottom: 0;
   z-index: 99;
+  border-top: 1px solid var(--bg-color);
+  border-radius: 10px;
 }
 
 .footer .elem {
@@ -594,12 +591,12 @@ body {
 /* ----------------- Matches Page ------------------ */
 
 .matches-category {
-  padding: 1.50px 20px;
+  padding: 20px 20px;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
   overflow-x: auto;
   overflow-y: hidden;
   background: #fff;
@@ -610,7 +607,7 @@ body {
 }
 
 .matches-category .elem {
-  padding: 0.50px 10px;
+  padding: 5px 15px;
   border: 1px solid gray;
   border-radius: 20px;
   color: gray;
@@ -618,7 +615,7 @@ body {
 }
 
 .matches-category .elem.active {
-  padding: 0.50px 10px;
+  padding: 5px 10px;
   border: 1px solid var(--main-color);
   border-radius: 20px;
   scale: 1.02;
@@ -774,7 +771,7 @@ body {
 }
 
 .videos-category {
-  padding: 50px 20px;
+  padding: 60px 20px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -790,7 +787,7 @@ body {
 }
 
 .videos-category .elem {
-  padding: 0.50px 10px;
+  padding: 5px 15px;
   border-radius: 20px;
   color: gray;
   cursor: pointer;
@@ -848,10 +845,12 @@ body {
 .more-content ul li i {
   padding-right: 10px;
   font-size: var(--size-20);
+  opacity: 0.7;
 }
 
 .more-content ul li .text {
   font-size: var(--size-18);
+  opacity: 0.7;
 }
 
 /* news.html */
