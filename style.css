@@ -90,9 +90,31 @@ body {
   border-radius: 10px;
   font-size: var(--size-12);
   font-weight: 200;
+  opacity: 0.6;
   user-select: none;
   cursor: pointer;
 }
+
+.navbar1 .dropdown-match{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: #fff;
+  gap: 8px;
+}
+
+.navbar1 .dropdown-match .match-name{
+  font-size: var(--size-18);
+}
+
+.navbar1 i{
+  padding: 8px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 .navbar2 {
   width: 30%;
@@ -981,4 +1003,66 @@ body {
  background: var(--main-color);
  text-align: center;
  padding: 10px;
+}
+
+/* match.html */
+.match-info-content{
+  width: 100%;
+  min-width: var(--general-width);
+  position: fixed;
+  height: fit-content;
+  top: calc(100px);
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-info-content::-webkit-scrollbar{
+  display: none;
+}
+
+.match-info-content .match-info{
+  width: 30%;
+  min-width: var(--general-width);
+  padding: 10px 0;
+}
+
+.match-info-content .match-info .title{
+  background: rgba(128, 128, 128, 0.627);
+  padding: 5px 10px;
+  color: #fff;
+  font-size: var(--size-15);
+  text-transform: uppercase;
+}
+
+.match-info-content .match-info .info-details{
+  padding: 5px 10px;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.match-info-content .match-info .info-details .details{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.match-info-content .match-info .info-details .details #tag{
+  font-size: var(--size-14);
+  width: 30%;
+  opacity: 0.6;
+}
+
+.match-info-content .match-info .info-details .details #tag-details{
+  font-size: var(--size-14);
+  width: 60%;
 }
