@@ -151,6 +151,27 @@ body {
   margin-top: 5px;
 }
 
+.nav-linksi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-linksi a {
+  font-size: var(--size-14);
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-linksi.selected{
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fff;
+  margin-top: 5px;
+}
+
 /* ----------------- page ------------------ */
 .page-content {
   position: fixed;
@@ -1006,6 +1027,14 @@ body {
 }
 
 /* match.html */
+#info{
+  display: none;
+}
+
+#live{
+  display: none;
+}
+
 .match-info-content{
   width: 100%;
   min-width: var(--general-width);
