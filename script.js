@@ -1,7 +1,8 @@
 var btmbutton = document.querySelectorAll(".footer .elem");
-var matchInfo = document.querySelectorAll(".match");
+// var matchInfo = document.querySelectorAll(".match");
 var back = document.querySelector("#back-btn");
 var navlinks = document.querySelectorAll(".navbar2 .nav-linksi");
+
 
 btmbutton.forEach(function (elem) {
     elem.addEventListener("click", function () {
@@ -10,13 +11,9 @@ btmbutton.forEach(function (elem) {
     })
 })
 
-matchInfo.forEach(function (match) {
-    match.addEventListener("click", function () {
-        var page = match.getAttribute("data-match-name");
-        console.log(page);
-        window.location.href = `match.html`;
-    })
-})
+function gotoMatchInfo(){
+    window.location.href = `match.html`;
+}
 
 function remove() {
     navlinks.forEach(function (navlink) {
@@ -33,11 +30,12 @@ navlinks.forEach(function (navlink) {
         var id = navlink.getAttribute("id");
         remove();
         navlink.classList.add("selected");
-        document.getElementById(id+"-page").style.display = "flex";
+        document.getElementById(id + "-page").style.display = "flex";
     })
 })
 
 
-back.addEventListener("click", function () {
-    window.location.href = `index.html`;
-})
+function backToMain(){
+    window.location.href = "/";
+}
+
