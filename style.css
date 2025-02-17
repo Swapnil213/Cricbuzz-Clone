@@ -1047,7 +1047,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .match-info-content::-webkit-scrollbar{
@@ -1094,4 +1094,116 @@ body {
 .match-info-content .match-info .info-details .details #tag-details{
   font-size: var(--size-14);
   width: 60%;
+}
+
+.match-info-content .live-head{
+  width: 30%;
+  min-width: var(--general-width);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--bg-color);
+}
+
+.live-head .content-left{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.live-head .content-left h3{
+  color: #000000;
+  font-weight: 200;
+}
+
+.live-head .content-left .content-score{
+  color: #000000;
+  font-size: var(--size-20);
+  font-weight: 600;
+}
+
+.live-head .content-left .content-score span{
+  color: #000000;
+  opacity: 0.6;
+  font-size: var(--size-18);
+  font-weight: 400;
+}
+
+.live-head .content-left .scenario{
+  color: red;
+  font-size: var(--size-14);
+  font-weight: 400;
+}
+
+.live-head .content-right{
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.live-head .content-right h4{
+  font-size: var(--size-14);
+  font-weight: 300;
+  opacity: 0.6;
+  padding: 5px 0;
+}
+
+.live-head .content-right value{
+  font-size: var(--size-14);
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 5px 0;
+}
+
+.live-main .main-head{
+  font-size: var(--size-14);
+  color: var(--text-color);
+  width: 30%;
+  min-width: var(--general-width);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+.live-main .main-head a{
+  color: rgb(29, 107, 138);
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  min-width: var(--general-width);
+  padding: 10px 0;
+  text-align: left;
+}
+
+table th{
+  font-size: var(--size-12);
+  color: black;
+  opacity: 0.6;
+  font-weight: 400;
+  padding: 5px 0;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+table tr{
+  padding: 10px 5px;
+  font-size: var(--size-15);
+  color: gray;
+}
+
+table tr #batter, table tr #bowler{
+  color: rgb(29, 107, 138);
+}
+
+table tr #runs{
+  color: #000000;
 }
