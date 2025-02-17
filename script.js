@@ -36,7 +36,7 @@ function changeContent(id) {
 }
 
 function backToMain(){
-    window.location.href = "/";
+    window.location.href = "index.html";
 }
 
 function mainFunction() {
